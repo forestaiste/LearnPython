@@ -27,3 +27,8 @@ def tag(name, *content, cls=None, **attrs):
     my_tag = {'name': 'img', 'title': 'Sunset Boulevard', 'src': 'sunset.jpg', 'cls': 'framed'}
     # my_tag = {'name': 'img', 'cls': 'framed'}
     print(tag(**my_tag))
+
+3. globals()返回一个字典，表示当前的全局符号表。
+promos = [globals() [name] for name in globals()
+            if name.endswith('_promo')
+            and name != 'best_promo']
